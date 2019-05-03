@@ -1,0 +1,270 @@
+PODS:
+  - Alamofire (4.8.2)
+  - AlamofireImage (3.5.2):
+    - Alamofire (~> 4.8)
+  - AlamofireNetworkActivityLogger (2.2.0):
+    - Alamofire (~> 4.0)
+  - DropDown (2.3.2)
+  - FCUUID (1.3.1):
+    - UICKeyChainStore (~> 2.1.0)
+  - FDTake (3.0.0)
+  - Firebase/Core (5.20.2):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (= 5.8.1)
+  - Firebase/CoreOnly (5.20.2):
+    - FirebaseCore (= 5.4.1)
+  - Firebase/Messaging (5.20.2):
+    - Firebase/CoreOnly
+    - FirebaseMessaging (= 3.5.0)
+  - FirebaseAnalytics (5.8.1):
+    - FirebaseCore (~> 5.4)
+    - FirebaseInstanceID (~> 3.8)
+    - GoogleAppMeasurement (= 5.8.1)
+    - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
+    - GoogleUtilities/MethodSwizzler (~> 5.2)
+    - GoogleUtilities/Network (~> 5.2)
+    - "GoogleUtilities/NSData+zlib (~> 5.2)"
+    - nanopb (~> 0.3)
+  - FirebaseAnalyticsInterop (1.2.0)
+  - FirebaseCore (5.4.1):
+    - GoogleUtilities/Environment (~> 5.2)
+    - GoogleUtilities/Logger (~> 5.2)
+  - FirebaseInstanceID (3.8.1):
+    - FirebaseCore (~> 5.2)
+    - GoogleUtilities/Environment (~> 5.2)
+    - GoogleUtilities/UserDefaults (~> 5.2)
+  - FirebaseMessaging (3.5.0):
+    - FirebaseAnalyticsInterop (~> 1.1)
+    - FirebaseCore (~> 5.2)
+    - FirebaseInstanceID (~> 3.6)
+    - GoogleUtilities/Environment (~> 5.3)
+    - GoogleUtilities/Reachability (~> 5.3)
+    - GoogleUtilities/UserDefaults (~> 5.3)
+    - Protobuf (~> 3.1)
+  - FSPagerView (0.7.2)
+  - GoogleAppMeasurement (5.8.1):
+    - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
+    - GoogleUtilities/MethodSwizzler (~> 5.2)
+    - GoogleUtilities/Network (~> 5.2)
+    - "GoogleUtilities/NSData+zlib (~> 5.2)"
+    - nanopb (~> 0.3)
+  - GoogleMaps/Base (3.1.0)
+  - GooglePlaces (3.1.0):
+    - GoogleMaps/Base (= 3.1.0)
+  - GoogleUtilities/AppDelegateSwizzler (5.8.0):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (5.8.0)
+  - GoogleUtilities/Logger (5.8.0):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (5.8.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (5.8.0):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (5.8.0)"
+  - GoogleUtilities/Reachability (5.8.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (5.8.0):
+    - GoogleUtilities/Logger
+  - Heimdallr (3.6.1):
+    - Result (~> 3.0)
+  - Hue (3.0.1)
+  - ImageSlideshow/Core (1.6.1)
+  - ImageSlideshow/Kingfisher (1.6.1):
+    - ImageSlideshow/Core
+    - Kingfisher (> 3.0)
+  - IQKeyboardManagerSwift (6.3.0)
+  - KeychainAccess (3.2.0)
+  - Kingfisher (4.6.4)
+  - Material (2.16.4):
+    - Material/Core (= 2.16.4)
+  - Material/Core (2.16.4):
+    - Motion (~> 1.4.3)
+  - Motion (1.4.3):
+    - Motion/Core (= 1.4.3)
+  - Motion/Core (1.4.3)
+  - Moya/Core (11.0.2):
+    - Alamofire (~> 4.1)
+    - Result (~> 3.0)
+  - Moya/RxSwift (11.0.2):
+    - Moya/Core
+    - RxSwift (~> 4.0)
+  - MZAppearance (1.1.6)
+  - MZFormSheetPresentationController (2.4.3):
+    - MZAppearance
+  - nanopb (0.3.901):
+    - nanopb/decode (= 0.3.901)
+    - nanopb/encode (= 0.3.901)
+  - nanopb/decode (0.3.901)
+  - nanopb/encode (0.3.901)
+  - ObjectMapper (3.4.2)
+  - Protobuf (3.7.0)
+  - PureLayout (3.1.4)
+  - QRCodeReader.swift (8.1.1)
+  - RadioButton (1.0)
+  - Realm (3.14.2):
+    - Realm/Headers (= 3.14.2)
+  - Realm/Headers (3.14.2)
+  - RealmSwift (3.14.2):
+    - Realm (= 3.14.2)
+  - Result (3.2.4)
+  - RxSwift (4.5.0)
+  - SDWebImage (5.0.2):
+    - SDWebImage/Core (= 5.0.2)
+  - SDWebImage/Core (5.0.2)
+  - SVProgressHUD (2.2.5)
+  - UICheckbox.Swift (1.0.0)
+  - UICKeyChainStore (2.1.2)
+  - WRUserSettings (4.0.0)
+  - XLPagerTabStrip (8.0.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireImage (~> 3.3)
+  - AlamofireNetworkActivityLogger (from `https://github.com/fachrifaul/AlamofireNetworkActivityLogger.git`, branch `master`)
+  - DropDown (= 2.3.2)
+  - FCUUID
+  - FDTake
+  - Firebase/Core
+  - Firebase/Messaging
+  - FSPagerView (~> 0.7.2)
+  - GooglePlaces
+  - Heimdallr (from `https://github.com/fachrifaul/Heimdallr.swift.git`, branch `master`)
+  - Hue (from `https://github.com/fachrifaul/Hue.git`, branch `master`)
+  - ImageSlideshow/Kingfisher (~> 1.6.1)
+  - IQKeyboardManagerSwift
+  - KeychainAccess
+  - Kingfisher (~> 4.6.2)
+  - Material
+  - Moya/RxSwift (~> 11.0.0)
+  - MZFormSheetPresentationController
+  - ObjectMapper (~> 3.1)
+  - PureLayout
+  - QRCodeReader.swift (~> 8.1.1)
+  - RadioButton
+  - RealmSwift
+  - RxSwift (~> 4.0)
+  - SDWebImage
+  - SVProgressHUD
+  - UICheckbox.Swift
+  - WRUserSettings (~> 4.0.0)
+  - XLPagerTabStrip (~> 8.0.1)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireImage
+    - DropDown
+    - FCUUID
+    - FDTake
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseAnalyticsInterop
+    - FirebaseCore
+    - FirebaseInstanceID
+    - FirebaseMessaging
+    - FSPagerView
+    - GoogleAppMeasurement
+    - GoogleMaps
+    - GooglePlaces
+    - GoogleUtilities
+    - ImageSlideshow
+    - IQKeyboardManagerSwift
+    - KeychainAccess
+    - Kingfisher
+    - Material
+    - Motion
+    - Moya
+    - MZAppearance
+    - MZFormSheetPresentationController
+    - nanopb
+    - ObjectMapper
+    - Protobuf
+    - PureLayout
+    - QRCodeReader.swift
+    - RadioButton
+    - Realm
+    - RealmSwift
+    - Result
+    - RxSwift
+    - SDWebImage
+    - SVProgressHUD
+    - UICheckbox.Swift
+    - UICKeyChainStore
+    - WRUserSettings
+    - XLPagerTabStrip
+
+EXTERNAL SOURCES:
+  AlamofireNetworkActivityLogger:
+    :branch: master
+    :git: https://github.com/fachrifaul/AlamofireNetworkActivityLogger.git
+  Heimdallr:
+    :branch: master
+    :git: https://github.com/fachrifaul/Heimdallr.swift.git
+  Hue:
+    :branch: master
+    :git: https://github.com/fachrifaul/Hue.git
+
+CHECKOUT OPTIONS:
+  AlamofireNetworkActivityLogger:
+    :commit: 20ebbfad6a9155561debace8d62c61f854790fd0
+    :git: https://github.com/fachrifaul/AlamofireNetworkActivityLogger.git
+  Heimdallr:
+    :commit: e24aea5868b5dd0098a38fdd97aa720fa6203206
+    :git: https://github.com/fachrifaul/Heimdallr.swift.git
+  Hue:
+    :commit: ecb175ee0376b62473f8375c1165b0b29c5556ed
+    :git: https://github.com/fachrifaul/Hue.git
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  AlamofireImage: 63cfe3baf1370be6c498149687cf6db3e3b00999
+  AlamofireNetworkActivityLogger: 43b69736ab97aac21665191aeade8c355677c233
+  DropDown: 7f87abecc28f9b4edad810fe1211c5c018c257e5
+  FCUUID: bb054fc90cd7cd99320f9f6ff8e130fe607fba05
+  FDTake: cbae493765483304fbaa48e402ea3d7b22ba86d0
+  Firebase: 0c8cf33f266410c61ab3e2265cfa412200351d9c
+  FirebaseAnalytics: ece1aa57a4f43c64d53a648b5a5e05151aae947b
+  FirebaseAnalyticsInterop: efbe45c8385ec626e29f9525e5ebd38520dfb6c1
+  FirebaseCore: f1a9a8be1aee4bf71a2fc0f4096df6788bdfda61
+  FirebaseInstanceID: a122b0c258720cf250551bb2bedf48c699f80d90
+  FirebaseMessaging: 4235f949ce1c4e827aeb19705ba5c53f9b85aa10
+  FSPagerView: 7515f63c424da71623d299d4fbbfb3dd884642ff
+  GoogleAppMeasurement: ffe513e90551844a739e7bcbb1d2aca1c28a4338
+  GoogleMaps: 5c13302e6fe6bb6e686b267196586b91cd594225
+  GooglePlaces: e874db179f2675c4f3eeda0b686b540273a578b0
+  GoogleUtilities: 04fce34bcd5620c1ee76fb79172105c74a4df335
+  Heimdallr: b620b37d217daf90abcb592711c1e2a27b554845
+  Hue: fe99995c39b3ffe7b8a7a44a143e4a0a790a4f08
+  ImageSlideshow: f0f33e1a20668e83d77f5fb7729e4ae4437c0759
+  IQKeyboardManagerSwift: a8228c257614af98743b4cd8584637025f36358f
+  KeychainAccess: 3b1bf8a77eb4c6ea1ce9404c292e48f948954c6b
+  Kingfisher: 68498a706e46c2a050b0c9572f100e5db407f6e0
+  Material: 4ed78690b09ffd148b5ffab6b4367fb1d8da1cd3
+  Motion: 153ba49692997888556c7a95207278a8b1f8be95
+  Moya: a725035953bc1c0eb1be505ab903984501d82440
+  MZAppearance: 0c06d3fa9cc55142f1da14bc8631fbe8fd6e19d5
+  MZFormSheetPresentationController: fbfdbad31884f16fac17fbe3c44c168306cc1095
+  nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
+  Protobuf: 7a877b7f3e5964e3fce995e2eb323dbc6831bb5a
+  PureLayout: f08c01b8dec00bb14a1fefa3de4c7d9c265df85e
+  QRCodeReader.swift: b164a681887de276d405ff02bce854d82cd6360b
+  RadioButton: 7ef053baf6ff0e7f9e777016c28e9ba4e330edba
+  Realm: 179c6706e3a49dbfe112e572fd3c03d3169bea35
+  RealmSwift: 1797f272fb51c555b764fada32e82159a2c65247
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
+  SDWebImage: 6764b5fa0f73c203728052955dbefa2bf1f33282
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  UICheckbox.Swift: 85715689206fac5bae38b308f19c2a3e00442c3b
+  UICKeyChainStore: 85db518bb1d294366d15ec9b92a416c4e670518f
+  WRUserSettings: e0c62a6e9a2ff8f00491462ecb9d2dc330a1acee
+  XLPagerTabStrip: c908b17cbf42fcd2598ee1adfc49bae25444d88a
+
+PODFILE CHECKSUM: b74021055f740d3e1e93f65ee11ad274c698501f
+
+COCOAPODS: 1.5.3
