@@ -29,8 +29,8 @@ class HomeWorker
                     
                     // Try Method
                     if let data = data as? [String:Any] , !data.isEmpty {
+                        
                         let profile =  profileMapper(JSON: data)
-
                         Completion(profile,true)
                     }
                     
@@ -50,4 +50,30 @@ class HomeWorker
             }
         }
     }
+    
+    
+    
+    // MARK: Worker Login + Using Moya!
+    func homeUserLoginWorker (request : Home.login.Request , completion Completion : @escaping ([String:Any]?,Bool) -> Void )
+    {
+        provider.request(.loginVIP(username: request.username!, password: request.password!)) { (Result) in
+            switch Result
+            {
+                
+            case .success(let response):
+                Completion(response.dataJSON, (response.statusCode == 200) ? true : false)
+                break
+                
+            case .failure(let error):
+                print("#Result from error \(String(describing: error.errorDescription))")
+                break
+                
+            }
+            
+        }
+    }
+    
+    
+    
+
 }

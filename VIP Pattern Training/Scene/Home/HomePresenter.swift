@@ -14,11 +14,13 @@ import UIKit
 
 protocol HomePresentationLogic
 {
-  func presentSomething(response: Home.Profile.Response)
+    func presentSomething(response: Home.Profile.Response)
+    func presentRouting ()
 }
 
 class HomePresenter: HomePresentationLogic
 {
+    
     
     
   weak var viewController: HomeDisplayLogic?
@@ -33,5 +35,10 @@ class HomePresenter: HomePresentationLogic
         
         viewController?.displaySomething(viewModel: viewModel)
     
+    }
+    
+    
+    func presentRouting () {
+        viewController?.routeToSettings()
     }
 }

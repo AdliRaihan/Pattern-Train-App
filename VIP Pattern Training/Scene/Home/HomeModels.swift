@@ -36,6 +36,25 @@ enum Home
         }
       }
     
+    enum login
+    {
+        struct Request
+        {
+            var username : String?
+            var password : String?
+        }
+        
+        struct Response
+        {
+            
+        }
+        
+        struct ViewModel
+        {
+            var username : String?
+        }
+    }
+    
     enum Something
     {
         struct Request

@@ -24,17 +24,23 @@ func getProfile ()
 enum profileServices
 {
     case getProfile(userId : String)
+    case loginVIP ( username : String , password : String )
 }
 
 extension profileServices : TargetType
 {
+   
+    var APIURL      : String {return "https://virtserver.swaggerhub.com/AdliRaihan_Developer/user_information"}
+    var APIVersion  : String {return "/1.0.0"}
+    var baseURL: URL {return URL(string: APIURL + APIVersion)!}
     
-    var baseURL: URL {return URL(string: "https://private-d000c1-segwaypractice.apiary-mock.com")!}
     
     var path: String {
         switch self {
         case .getProfile:
-            return "/profile"
+            return "/user/login"
+        case .loginVIP:
+            return "/user/login"
         }
     }
     
@@ -42,13 +48,17 @@ extension profileServices : TargetType
         switch  self {
         case .getProfile:
             return .post
+        case .loginVIP:
+            return .get
         }
     }
     
     var sampleData: Data {
         switch self {
-        case .getProfile(let userId):
-            return "{\"id\": \(userId), \"first_name\": \"Harry\", \"last_name\": \"Potter\"}".utf8Encoded
+        case .getProfile(let JSONString):
+            return "\(JSONString)".utf8Encoded
+        case .loginVIP:
+            return "".utf8Encoded
         }
     }
     
@@ -56,6 +66,8 @@ extension profileServices : TargetType
         switch self {
         case .getProfile(let userId):
             return .requestParameters(parameters: ["user_id":userId], encoding: JSONEncoding.default)
+        case .loginVIP(let username, let password):
+            return .requestParameters(parameters: ["username":username,"password":password], encoding: JSONEncoding.default)
         }
     }
     

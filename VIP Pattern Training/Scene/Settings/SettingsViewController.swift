@@ -11,13 +11,14 @@
 //
 
 import UIKit
+import  XLPagerTabStrip
 
 protocol SettingsDisplayLogic: class
 {
   func displaySomething(viewModel: Settings.Something.ViewModel)
 }
 
-class SettingsViewController: UIViewController, SettingsDisplayLogic
+class SettingsViewController: UIViewController, SettingsDisplayLogic,IndicatorInfoProvider,PagerTabStripDelegate
 {
   var interactor: SettingsBusinessLogic?
   var router: (NSObjectProtocol & SettingsRoutingLogic & SettingsDataPassing)?
@@ -72,7 +73,8 @@ class SettingsViewController: UIViewController, SettingsDisplayLogic
   }
   
   // MARK: Do something
-    @IBOutlet weak var settingsTextLabel: UILabel!
+    
+    
     func doSomething()
   {
     let request = Settings.Something.Request()
@@ -81,6 +83,25 @@ class SettingsViewController: UIViewController, SettingsDisplayLogic
   
   func displaySomething(viewModel: Settings.Something.ViewModel)
   {
-    settingsTextLabel.text = viewModel.name
+    
   }
+    
+    
+    // MARK: Status Bar Setting
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
+    
+    var itemInfo: IndicatorInfo = "Ticket"
+    
+    // MARK: Setting Page Swiper [1]
+    func updateIndicator(for viewController: PagerTabStripViewController, fromIndex: Int, toIndex: Int) {
+        
+    }
+
+    // MARK: Setting Page Swiper [2]
+    func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
+        return itemInfo
+    }
 }

@@ -15,6 +15,7 @@ import UIKit
 protocol HomeBusinessLogic
 {
     func doSomething    ( request: Home.Profile.Request )
+    func doLogin        ( request: Home.login.Request)
 }
 
 protocol HomeDataStore
@@ -25,6 +26,7 @@ protocol HomeDataStore
 
 class HomeInteractor: HomeBusinessLogic, HomeDataStore
 {
+    
     
     var homeAPI: Home.Profile.Response = Home.Profile.Response()
     var presenter: HomePresentationLogic?
@@ -38,23 +40,34 @@ class HomeInteractor: HomeBusinessLogic, HomeDataStore
     worker?.testAPI(request: request, completion: {
         (result,condition) in
         
-        if let result = result as? profileMapper
-        {
-            let response = Home.Profile.Response(
-                username: result.information!.username,
-                email: result.information!.email,
-                userId: result.information!.userId)
-            
-            if condition
-            {
-                print ( "Condition Passed!")
-                self.presenter?.presentSomething(response: response)
-            }
-        }
         
         
     })
     
   }
+    
+    
+    // MARK: Login Function -> buat login aja
+    func doLogin(request: Home.login.Request) {
+        worker = HomeWorker()
+        
+        worker?.homeUserLoginWorker(request: request, completion: { (result, condition) in
+            
+            if let result = profileMapper(JSON: result!) {
+                
+                if condition
+                {
+                    
+                    // * Initialize WRSettings
+                    UserSettings.standard.userName = result.information!.username!
+                    UserSettings.standard.userEmail = result.information!.email!
+                    UserSettings.standard.userLogged = true
+                    
+                    // * Route To Settings if login success
+                    self.presenter?.presentRouting()
+                }
+            }
+        })
+    }
     
 }

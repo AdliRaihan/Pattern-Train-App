@@ -10,9 +10,11 @@ import Foundation
 
 struct savedColor
 {
+    static let lightGrayShared = lightGray()
+    
     struct lightGray
     {
-        var A300 = "#90a4ae"
-        var A800 = "#37474f"
+        var purpleThin = "#A87CA0"
+        var blueSky = "#89C4F4"
     }
 }

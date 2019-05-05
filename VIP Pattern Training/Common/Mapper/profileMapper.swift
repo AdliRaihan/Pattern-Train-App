@@ -7,25 +7,10 @@
 //
 
 import Foundation
-
 import ObjectMapper
 
 class profileMapper : Mappable
 {
-    /** JSON
-     "message": Success, "information": {
-     "contact_saved" = 10;
-     email = "adli.raihan@wgs.co.id";
-     favorite = 1;
-     "user_id" = 29103923123;
-     username = adliraihan;
-     wallet =     {
-     amount = 250000000;
-     currency = IDR;
-     premium = 0;
-     };
-     **/
-   
     var information : profileInformation?
     
     required init?(map: Map) {
@@ -39,24 +24,28 @@ class profileMapper : Mappable
 
 class profileInformation : Mappable
 {
-    
-    var email       : String?
-    var favorite    : Int?
-    var userId      : Int?
+    /**
+     
+     "full_name": "Adli Raihan",
+     "username": "Thibobs",
+     "email": "adli.raihan@wgs.co.id",
+     "image": "https://www.google.com"
+     
+     **/
+    var fullname    : String?
     var username    : String?
-    var contacts    : Int?
+    var email       : String?
+    var image       : String?
     
     required init?(map: Map) {
         
     }
     
     func mapping(map: Map) {
-        email       <- map["email"]
-        favorite    <- map["favorite"]
-        userId      <- map["user_id"]
-        username    <- map["username"]
-        contacts    <- map["contact_saved"]
+        fullname       <- map["full_name"]
+        username       <- map["username"]
+        image          <- map["image"]
+        email          <- map["email"]
     }
-    
     
 }

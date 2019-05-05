@@ -19,12 +19,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // * Make Default Controller
         let navigationPusher = UINavigationController()
-        let destinationPusher = HomeViewController(nibName: "HomeView", bundle: nil)
         
         // * Make Pusher
-        navigationPusher.pushViewController(destinationPusher, animated: true)
+        navigationPusher.pushViewController(self.rootView, animated: true)
         
-        self.window?.rootViewController = destinationPusher
+        self.window?.rootViewController = navigationPusher
         self.window?.makeKeyAndVisible()
         return true
     }

@@ -10,10 +10,28 @@
 		0950CD391ECAD4C85C959F6C /* Pods_VIP_Pattern_TrainingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 108A9D50B658C5ACA0DBC221 /* Pods_VIP_Pattern_TrainingUITests.framework */; };
 		6D550B4F11D379EE2CCFCCDE /* Pods_VIP_Pattern_Training.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DA6A3E2BA00EC401DD0E4B5 /* Pods_VIP_Pattern_Training.framework */; };
 		921B6644BB7637EB53155615 /* Pods_VIP_Pattern_TrainingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BDD89157FC963A31A71A9BA /* Pods_VIP_Pattern_TrainingTests.framework */; };
+		AD4782B5227F02D5003EF56A /* TicketPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4782AF227F02D5003EF56A /* TicketPresenter.swift */; };
+		AD4782B6227F02D5003EF56A /* TicketWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4782B0227F02D5003EF56A /* TicketWorker.swift */; };
+		AD4782B7227F02D5003EF56A /* TicketRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4782B1227F02D5003EF56A /* TicketRouter.swift */; };
+		AD4782B8227F02D5003EF56A /* TicketModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4782B2227F02D5003EF56A /* TicketModels.swift */; };
+		AD4782B9227F02D5003EF56A /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4782B3227F02D5003EF56A /* TicketViewController.swift */; };
+		AD4782BA227F02D5003EF56A /* TicketInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4782B4227F02D5003EF56A /* TicketInteractor.swift */; };
+		AD4782BC227F040C003EF56A /* TicketView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD4782BB227F040C003EF56A /* TicketView.xib */; };
+		AD4782BE227F1A13003EF56A /* TicketPagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4782BD227F1A13003EF56A /* TicketPagerViewController.swift */; };
+		AD4782C0227F1F33003EF56A /* TicketPagerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD4782BF227F1F33003EF56A /* TicketPagerView.xib */; };
+		AD4E1049227DEA0D00877323 /* dashboardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4E1043227DEA0D00877323 /* dashboardPresenter.swift */; };
+		AD4E104A227DEA0D00877323 /* dashboardWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4E1044227DEA0D00877323 /* dashboardWorker.swift */; };
+		AD4E104B227DEA0D00877323 /* dashboardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4E1045227DEA0D00877323 /* dashboardRouter.swift */; };
+		AD4E104C227DEA0D00877323 /* dashboardModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4E1046227DEA0D00877323 /* dashboardModels.swift */; };
+		AD4E104D227DEA0D00877323 /* dashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4E1047227DEA0D00877323 /* dashboardViewController.swift */; };
+		AD4E104E227DEA0D00877323 /* dashboardInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4E1048227DEA0D00877323 /* dashboardInteractor.swift */; };
+		AD4E1050227DEA1B00877323 /* dashboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD4E104F227DEA1B00877323 /* dashboardView.xib */; };
 		ADA797C7227C12BD00107E07 /* ConstantColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA797C6227C12BD00107E07 /* ConstantColor.swift */; };
 		ADA797C9227C137900107E07 /* ConstantExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA797C8227C137900107E07 /* ConstantExtension.swift */; };
 		ADA797CC227C147100107E07 /* baseServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA797CB227C147100107E07 /* baseServices.swift */; };
 		ADA797CF227C30B700107E07 /* profileMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA797CE227C30B700107E07 /* profileMapper.swift */; };
+		ADC2EBF5227D8419005A84EB /* ConstantRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC2EBF4227D8419005A84EB /* ConstantRouter.swift */; };
+		ADC2EBF8227D861B005A84EB /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC2EBF7227D861B005A84EB /* UserSettings.swift */; };
 		ADD1E505227AD92400C0CDFE /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD1E4FF227AD92400C0CDFE /* HomePresenter.swift */; };
 		ADD1E506227AD92400C0CDFE /* HomeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD1E500227AD92400C0CDFE /* HomeWorker.swift */; };
 		ADD1E507227AD92400C0CDFE /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD1E501227AD92400C0CDFE /* HomeRouter.swift */; };
@@ -63,10 +81,28 @@
 		4CBF756074C660880D8EF099 /* Pods-VIP Pattern TrainingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIP Pattern TrainingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VIP Pattern TrainingTests/Pods-VIP Pattern TrainingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		86BAA26BE5321B47F0C0198F /* Pods-VIP Pattern TrainingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIP Pattern TrainingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VIP Pattern TrainingTests/Pods-VIP Pattern TrainingTests.release.xcconfig"; sourceTree = "<group>"; };
 		9D1A876DB8B405034232EB03 /* Pods-VIP Pattern TrainingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIP Pattern TrainingUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VIP Pattern TrainingUITests/Pods-VIP Pattern TrainingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AD4782AF227F02D5003EF56A /* TicketPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketPresenter.swift; sourceTree = "<group>"; };
+		AD4782B0227F02D5003EF56A /* TicketWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketWorker.swift; sourceTree = "<group>"; };
+		AD4782B1227F02D5003EF56A /* TicketRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketRouter.swift; sourceTree = "<group>"; };
+		AD4782B2227F02D5003EF56A /* TicketModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketModels.swift; sourceTree = "<group>"; };
+		AD4782B3227F02D5003EF56A /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
+		AD4782B4227F02D5003EF56A /* TicketInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketInteractor.swift; sourceTree = "<group>"; };
+		AD4782BB227F040C003EF56A /* TicketView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TicketView.xib; sourceTree = "<group>"; };
+		AD4782BD227F1A13003EF56A /* TicketPagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketPagerViewController.swift; sourceTree = "<group>"; };
+		AD4782BF227F1F33003EF56A /* TicketPagerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TicketPagerView.xib; sourceTree = "<group>"; };
+		AD4E1043227DEA0D00877323 /* dashboardPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dashboardPresenter.swift; sourceTree = "<group>"; };
+		AD4E1044227DEA0D00877323 /* dashboardWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dashboardWorker.swift; sourceTree = "<group>"; };
+		AD4E1045227DEA0D00877323 /* dashboardRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dashboardRouter.swift; sourceTree = "<group>"; };
+		AD4E1046227DEA0D00877323 /* dashboardModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dashboardModels.swift; sourceTree = "<group>"; };
+		AD4E1047227DEA0D00877323 /* dashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dashboardViewController.swift; sourceTree = "<group>"; };
+		AD4E1048227DEA0D00877323 /* dashboardInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dashboardInteractor.swift; sourceTree = "<group>"; };
+		AD4E104F227DEA1B00877323 /* dashboardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = dashboardView.xib; sourceTree = "<group>"; };
 		ADA797C6227C12BD00107E07 /* ConstantColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantColor.swift; sourceTree = "<group>"; };
 		ADA797C8227C137900107E07 /* ConstantExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantExtension.swift; sourceTree = "<group>"; };
 		ADA797CB227C147100107E07 /* baseServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = baseServices.swift; sourceTree = "<group>"; };
 		ADA797CE227C30B700107E07 /* profileMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileMapper.swift; sourceTree = "<group>"; };
+		ADC2EBF4227D8419005A84EB /* ConstantRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantRouter.swift; sourceTree = "<group>"; };
+		ADC2EBF7227D861B005A84EB /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 		ADD1E4FF227AD92400C0CDFE /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		ADD1E500227AD92400C0CDFE /* HomeWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorker.swift; sourceTree = "<group>"; };
 		ADD1E501227AD92400C0CDFE /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
@@ -138,9 +174,40 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		AD4782AE227F02BF003EF56A /* Ticket */ = {
+			isa = PBXGroup;
+			children = (
+				AD4782AF227F02D5003EF56A /* TicketPresenter.swift */,
+				AD4782B0227F02D5003EF56A /* TicketWorker.swift */,
+				AD4782B1227F02D5003EF56A /* TicketRouter.swift */,
+				AD4782B2227F02D5003EF56A /* TicketModels.swift */,
+				AD4782B4227F02D5003EF56A /* TicketInteractor.swift */,
+				AD4782B3227F02D5003EF56A /* TicketViewController.swift */,
+				AD4782BD227F1A13003EF56A /* TicketPagerViewController.swift */,
+				AD4782BB227F040C003EF56A /* TicketView.xib */,
+				AD4782BF227F1F33003EF56A /* TicketPagerView.xib */,
+			);
+			path = Ticket;
+			sourceTree = "<group>";
+		};
+		AD4E1042227DE9F800877323 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				AD4E1043227DEA0D00877323 /* dashboardPresenter.swift */,
+				AD4E1044227DEA0D00877323 /* dashboardWorker.swift */,
+				AD4E1045227DEA0D00877323 /* dashboardRouter.swift */,
+				AD4E1046227DEA0D00877323 /* dashboardModels.swift */,
+				AD4E1047227DEA0D00877323 /* dashboardViewController.swift */,
+				AD4E1048227DEA0D00877323 /* dashboardInteractor.swift */,
+				AD4E104F227DEA1B00877323 /* dashboardView.xib */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
 		ADA797C4227C086400107E07 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				ADC2EBF6227D860B005A84EB /* DeviceSetting */,
 				ADA797CD227C30AA00107E07 /* Mapper */,
 				ADA797CA227C145A00107E07 /* API */,
 				ADA797C5227C12A200107E07 /* Constant */,
@@ -153,6 +220,7 @@
 			children = (
 				ADA797C6227C12BD00107E07 /* ConstantColor.swift */,
 				ADA797C8227C137900107E07 /* ConstantExtension.swift */,
+				ADC2EBF4227D8419005A84EB /* ConstantRouter.swift */,
 			);
 			path = Constant;
 			sourceTree = "<group>";
@@ -171,6 +239,14 @@
 				ADA797CE227C30B700107E07 /* profileMapper.swift */,
 			);
 			path = Mapper;
+			sourceTree = "<group>";
+		};
+		ADC2EBF6227D860B005A84EB /* DeviceSetting */ = {
+			isa = PBXGroup;
+			children = (
+				ADC2EBF7227D861B005A84EB /* UserSettings.swift */,
+			);
+			path = DeviceSetting;
 			sourceTree = "<group>";
 		};
 		ADD1E50B227AD94000C0CDFE /* Home */ = {
@@ -259,6 +335,8 @@
 		ADDA7565227AC6A7000D2C28 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				AD4782AE227F02BF003EF56A /* Ticket */,
+				AD4E1042227DE9F800877323 /* Dashboard */,
 				ADD1E50B227AD94000C0CDFE /* Home */,
 				ADD1E50E227ADDCC00C0CDFE /* Settings */,
 			);
@@ -386,9 +464,12 @@
 			files = (
 				ADDA7542227AC68E000D2C28 /* LaunchScreen.storyboard in Resources */,
 				ADD1E51C227ADDF900C0CDFE /* SettingsView.xib in Resources */,
+				AD4782C0227F1F33003EF56A /* TicketPagerView.xib in Resources */,
 				ADDA753F227AC68E000D2C28 /* Assets.xcassets in Resources */,
 				ADDA753D227AC68B000D2C28 /* Main.storyboard in Resources */,
 				ADD1E50D227ADAB800C0CDFE /* HomeView.xib in Resources */,
+				AD4782BC227F040C003EF56A /* TicketView.xib in Resources */,
+				AD4E1050227DEA1B00877323 /* dashboardView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,21 +678,36 @@
 				ADA797CF227C30B700107E07 /* profileMapper.swift in Sources */,
 				ADD1E505227AD92400C0CDFE /* HomePresenter.swift in Sources */,
 				ADDA753A227AC68B000D2C28 /* ViewController.swift in Sources */,
+				AD4E104E227DEA0D00877323 /* dashboardInteractor.swift in Sources */,
 				ADD1E516227ADDEA00C0CDFE /* SettingsWorker.swift in Sources */,
+				AD4E104C227DEA0D00877323 /* dashboardModels.swift in Sources */,
+				ADC2EBF5227D8419005A84EB /* ConstantRouter.swift in Sources */,
 				ADD1E51A227ADDEA00C0CDFE /* SettingsInteractor.swift in Sources */,
 				ADD1E506227AD92400C0CDFE /* HomeWorker.swift in Sources */,
 				ADA797CC227C147100107E07 /* baseServices.swift in Sources */,
+				AD4E104D227DEA0D00877323 /* dashboardViewController.swift in Sources */,
+				AD4E104A227DEA0D00877323 /* dashboardWorker.swift in Sources */,
 				ADD1E518227ADDEA00C0CDFE /* SettingsModels.swift in Sources */,
+				AD4782B8227F02D5003EF56A /* TicketModels.swift in Sources */,
 				ADD1E517227ADDEA00C0CDFE /* SettingsRouter.swift in Sources */,
+				AD4782B5227F02D5003EF56A /* TicketPresenter.swift in Sources */,
+				AD4782BA227F02D5003EF56A /* TicketInteractor.swift in Sources */,
 				ADD1E50A227AD92400C0CDFE /* HomeInteractor.swift in Sources */,
 				ADDA7538227AC68B000D2C28 /* AppDelegate.swift in Sources */,
 				ADA797C9227C137900107E07 /* ConstantExtension.swift in Sources */,
+				AD4E1049227DEA0D00877323 /* dashboardPresenter.swift in Sources */,
+				ADC2EBF8227D861B005A84EB /* UserSettings.swift in Sources */,
+				AD4782B7227F02D5003EF56A /* TicketRouter.swift in Sources */,
+				AD4782B9227F02D5003EF56A /* TicketViewController.swift in Sources */,
 				ADD1E515227ADDEA00C0CDFE /* SettingsPresenter.swift in Sources */,
+				AD4782BE227F1A13003EF56A /* TicketPagerViewController.swift in Sources */,
 				ADA797C7227C12BD00107E07 /* ConstantColor.swift in Sources */,
 				ADD1E508227AD92400C0CDFE /* HomeModels.swift in Sources */,
+				AD4782B6227F02D5003EF56A /* TicketWorker.swift in Sources */,
 				ADD1E519227ADDEA00C0CDFE /* SettingsViewController.swift in Sources */,
 				ADD1E509227AD92400C0CDFE /* HomeViewController.swift in Sources */,
 				ADD1E507227AD92400C0CDFE /* HomeRouter.swift in Sources */,
+				AD4E104B227DEA0D00877323 /* dashboardRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

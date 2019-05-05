@@ -16,11 +16,13 @@ import Hue
 
 protocol HomeDisplayLogic: class
 {
-  func displaySomething(viewModel: Home.Profile.ViewModel)
+    func displaySomething(viewModel: Home.Profile.ViewModel)
+    func routeToSettings ()
 }
 
 class HomeViewController: UIViewController, HomeDisplayLogic
 {
+    
   var interactor: HomeBusinessLogic?
   var router: (NSObjectProtocol & HomeRoutingLogic & HomeDataPassing)?
 
@@ -68,37 +70,47 @@ class HomeViewController: UIViewController, HomeDisplayLogic
   
   // MARK: View lifecycle
   
-  override func viewDidLoad()
-  {
-    super.viewDidLoad()
-    
-    doSomething()
-    prepareNameTextField()
-  }
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+        
+        setupKeyboardDismiss()
+        prepareNameTextField()
+        
+    }
   
+    
   // MARK: Do something
-
-    @IBOutlet weak var homeApplicationNameLabel: UILabel!
     @IBOutlet weak var homeNameIdentifierTextField: TextField!
+    @IBOutlet weak var homeStartSegueButton: Button!
     
     static var APIResponse : Home.Profile.Response?
     
     func doSomething()
     {
-        let requestAPI = Home.Profile.Request()
-        interactor?.doSomething(request: requestAPI)
+        var requestAPI = Home.login.Request()
+        
+        // * Initialize Request
+        requestAPI.username = "adliraihan"
+        requestAPI.password = "adliraihan"
+        
+        // * Using
+        interactor?.doLogin(request: requestAPI)
     }
     
     func displaySomething(viewModel: Home.Profile.ViewModel)
     {
-        self.homeApplicationNameLabel.text = viewModel.controllerName
+        
+    }
+    
+    
+    func routeToSettings() {
+        router?.routeToSomewhere(segue: self.settingsController)
     }
     
     @IBAction func goToSettings ( _ Sender:UIButton )
     {
-        let destinationVC = SettingsViewController(nibName: "SettingsView", bundle: nil)
-        let segue = UIStoryboardSegue(identifier: "SettingsView", source: self, destination: destinationVC)
-        self.router?.routeToSomewhere(segue: segue)
+        doSomething()
     }
 }
 
@@ -117,6 +129,11 @@ extension HomeViewController
 {
     fileprivate func prepareNameTextField ()
     {
-        homeNameIdentifierTextField.homeViewTextField(infoDetail: "Your full name max. 24 Chars", placeHolder: "Full Name")
+        homeNameIdentifierTextField.homeViewTextField(infoDetail: "", placeHolder: "You are ?")
+    }
+    
+    fileprivate func prepareButton ()
+    {
+        homeStartSegueButton.homeViewButton()
     }
 }
